@@ -1,4 +1,10 @@
 import { useState } from 'react'
+import {Routes,Route} from  'react-router-dom'
+import Home from './pages/Home.jsx'
+import BuyCredit from './pages/BuyCredit.jsx'
+import Result from './pages/Result.jsx' 
+import Footer from './components/Footer.jsx'
+import Navbar from './components/Navbar.jsx'
 
 
 
@@ -6,9 +12,22 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-   <div className='bg-amber-600'>axa</div>
-    </>
+   <div className='px-4 sm:px-10 md:px-14 lg:px-28 min-h-screen bg-gradient-to-b from-green-200 to-green-900'>
+
+    <Navbar/>
+
+    <Routes>
+
+      <Route path='/' element={<Home/>}/>
+      <Route path='/buy' element={<BuyCredit/>}/>
+      <Route path='/result' element={<Result/>}/>
+
+    </Routes>
+
+    <Footer/>
+    
+
+   </div>
   )
 }
 
