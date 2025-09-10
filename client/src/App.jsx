@@ -12,7 +12,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-   <div className='px-4 sm:px-10 md:px-14 lg:px-28 min-h-screen bg-gradient-to-b from-green-200 to-green-900'>
+   <div className='  min-h-screen bg-gradient-to-b from-gray-500 to-violet-900'>
 
     <Navbar/>
 
