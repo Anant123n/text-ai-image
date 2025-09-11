@@ -11,7 +11,7 @@ const Header = () => {
       transition={{ duration: 0.7 }}
     >
       <motion.div
-        className='flex border-2 border-gray-600 rounded-full px-4 py-1 my-10 bg-amber-100 text-gray-600 hover:bg-amber-200 hover:text-gray-700 transition-colors duration-200'
+        className='flex border-2 border-gray-600 rounded-full px-6 py-2 my-10 bg-amber-100 text-gray-600 hover:bg-amber-200 hover:text-gray-700 transition-colors duration-200'
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
@@ -38,7 +38,7 @@ const Header = () => {
       </motion.div>
 
       <motion.button
-        className='flex gap-1 rounded-full py-2 px-5 border-0 my-5 bg-red-800 text-amber-100  hover:text-lg hover:scale-105 transition-all duration-200'
+        className='flex gap-1 rounded-full py-2 px-5 border-0 my-10 bg-red-800 text-amber-100  hover:text-lg hover:scale-105 transition-all duration-200'
         whileHover={{ scale: 1.08 }}
         whileTap={{ scale: 0.95 }}
         initial={{ opacity: 0, y: 10 }}
@@ -47,6 +47,51 @@ const Header = () => {
       >
         Generate Your Image <img src={assets.star_group} alt="" className='w-5 h-5' />
       </motion.button>
+
+      <div className='my-10'>
+        {Array(6).fill().map((item,index)=>(
+          <img src={index%2==0 ? assets.sample_img_1: assets.sample_img_2} alt="" key={index} className='inline-block w-20 h-20 mx-1'/>
+        ))}
+         <div className='text-xl text-amber-100 text-center'>Generated images from PicMagicAi</div>
+      </div>
+
+      <div className='m-4'>
+        <div className="rounded-full border-2 border-amber-400 px-6 py-3 text-lg font-semibold text-amber-700 shadow-md transition-all duration-200 hover:scale-105 cursor-pointer text-center ">
+          How AI Magic Works
+        </div>
+        <div className='text-gray-400'>Transform Texts Into Stunning Images</div>
+      </div>
+
+      <div className='w-auto h-auto my-10 flex flex-col gap-5 items-center justify-center  p-4'>
+
+        <div className='flex border-2 p-5 gap-2 rounded-lg'>
+          <img src='client/src/assets/step_icon_1.svg' alt="" className='h-10 w-10' />
+          <div className='flex flex-col justify-center  '>
+            <div>Describe Your Vision</div>
+            <div>Type a phrase, sentence, or paragraph that describes the image you want to create.</div>
+          </div>
+        </div>
+
+        <div className='flex border-2 p-5 gap-2 rounded-lg'>
+          <img src='client/src/assets/step_icon_1.svg' alt="" className='h-10 w-10' />
+          <div className='flex flex-col justify-center  '>
+            <div className='font-semibold'>Describe Your Vision</div>
+            <div className=''>Type a phrase, sentence, or paragraph that describes the image you want to create.</div>
+          </div>
+        </div>
+
+        <div className='flex border-2 p-5 gap-2 rounded-lg'>
+          <img src='client/src/assets/step_icon_1.svg' alt="" className='h-10 w-10' />
+          <div className='flex flex-col justify-center  '>
+            <div>Describe Your Vision</div>
+            <div>Type a phrase, sentence, or paragraph that describes the image you want to create.</div>
+          </div>
+        </div>
+
+
+      </div>
+
+     
 
 
     </motion.div>

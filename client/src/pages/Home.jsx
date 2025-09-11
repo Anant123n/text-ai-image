@@ -3,7 +3,7 @@ import Header from '../components/Header'
 
 const Home = () => {
   return (
-    <div className=' w-full h-[82vh]'>
+    <div className=' w-full h-full'>
       <Header/>
     </div>
   )
