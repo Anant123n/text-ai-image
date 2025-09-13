@@ -2,6 +2,17 @@ import React from 'react'
 import { assets } from '../assets/assets'
 import { motion } from 'framer-motion'
 
+const {user, setShowLogin} = useContext(AppContext)
+  const navigate = useNavigate()
+
+  const onClickHandler =() => {
+    if (user) {
+      navigate('/result')
+    }else{
+      setShowLogin(true)
+    }
+  }
+
 const Header = () => {
   return (
     <motion.div
