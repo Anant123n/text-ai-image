@@ -2,16 +2,7 @@ import React from 'react'
 import { assets } from '../assets/assets'
 import { motion } from 'framer-motion'
 
-const {user, setShowLogin} = useContext(AppContext)
-  const navigate = useNavigate()
 
-  const onClickHandler =() => {
-    if (user) {
-      navigate('/result')
-    }else{
-      setShowLogin(true)
-    }
-  }
 
 const Header = () => {
   return (
@@ -142,6 +133,99 @@ const Header = () => {
     </p>
   </div>
 </div>
+
+<div className="py-12 bg-gray-50 text-center">
+  {/* Section Header */}
+  <h2 className="text-3xl font-bold text-gray-900 mb-2">User Reviews</h2>
+  <p className="text-gray-500 mb-10">What our customers say</p>
+
+  {/* Reviews Container */}
+  <div className="flex flex-col md:flex-row justify-center items-center gap-6 px-4">
+    
+    {/* Review Card 1 */}
+    <div className="bg-white rounded-xl shadow-md p-6 w-full max-w-sm hover:scale-105 transition-all duration-200">
+      <img
+        src={assets.credit_star}
+        alt="User Avatar"
+        className="mx-auto rounded-full mb-4"
+      />
+      <h3 className="text-xl font-semibold text-gray-900">Manish Mehta</h3>
+      <p className="text-gray-500 mb-2">Graphic Designer</p>
+      <img
+        src={assets.credit_star}
+        alt="Star Rating"
+        className="mx-auto mb-4"
+      />
+      <p className="text-gray-600">
+        Outstanding developer! Built a robust site with perfect functionality. Efficient and detail-oriented.
+      </p>
+    </div>
+
+    {/* Review Card 2 */}
+    <div className="bg-white rounded-xl shadow-md p-6 w-full max-w-sm hover:scale-105 transition-all duration-200">
+      <img
+        src={assets.credit_star}
+        alt="User Avatar"
+        className="mx-auto rounded-full mb-4"
+      />
+      <h3 className="text-xl font-semibold text-gray-900">Anil Nair</h3>
+      <p className="text-gray-500 mb-2">TCS</p>
+      <img
+        src={assets.credit_star}
+        alt="Star Rating"
+        className="mx-auto mb-4"
+      />
+      <p className="text-gray-600">
+        Professional work! Delivered on time, with a polished design and smooth user experience. Efficient and detail-oriented.
+      </p>
+    </div>
+
+    <div className="bg-white rounded-xl shadow-md p-6 w-full max-w-sm hover:scale-105 transition-all duration-200">
+      <img
+        src={assets.credit_star}
+        alt="User Avatar"
+        className="mx-auto rounded-full mb-4"
+      />
+      <h3 className="text-xl font-semibold text-gray-900">Anil Nair</h3>
+      <p className="text-gray-500 mb-2">TCS</p>
+      <img
+        src={assets.credit_star}
+        alt="Star Rating"
+        className="mx-auto mb-4"
+      />
+      <p className="text-gray-600">
+        Professional work! Delivered on time, with a polished design and smooth user experience. Efficient and detail-oriented.
+      </p>
+    </div>
+
+    <div className="bg-white rounded-xl shadow-md p-6 w-full max-w-sm hover:scale-105 transition-all duration-200">
+      <img
+        src={assets.credit_star}
+        alt="User Avatar"
+        className="mx-auto rounded-full mb-4"
+      />
+      <h3 className="text-xl font-semibold text-gray-900">Anil Nair</h3>
+      <p className="text-gray-500 mb-2">TCS</p>
+      <img
+        src={assets.credit_star}
+        alt="Star Rating"
+        className="mx-auto mb-4"
+      />
+      <p className="text-gray-600">
+        Professional work! Delivered on time, with a polished design and smooth user experience. Efficient and detail-oriented.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div className=" flex flex-col items-center justify-center py-20">
+  <h2 className="text-3xl font-semibold text-blue-500 mb-6">See the Magic. Try Now</h2>
+  <button className="bg-yellow-400 text-pink-600 px-10 py-3 rounded-full font-medium hover:bg-yellow-500 transition">
+    Subscription <span className="ml-1">✨</span>
+  </button>
+</div>
+
+
 
 
 
