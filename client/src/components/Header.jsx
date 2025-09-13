@@ -62,34 +62,51 @@ const Header = () => {
         <div className='text-gray-400'>Transform Texts Into Stunning Images</div>
       </div>
 
-      <div className='w-auto h-auto my-10 flex flex-col gap-5 items-center justify-center  p-4'>
+<div className='w-auto h-auto my-10 flex flex-col gap-5 items-center justify-center p-4'>
 
-        <div className='flex border-2 p-5 gap-2 rounded-lg'>
-          <img src='client/src/assets/step_icon_1.svg' alt="" className='h-10 w-10' />
-          <div className='flex flex-col justify-center  '>
-            <div>Describe Your Vision</div>
-            <div>Type a phrase, sentence, or paragraph that describes the image you want to create.</div>
-          </div>
-        </div>
+  {/* Step 1 */}
+  <div className='flex border-2 p-5 gap-4 rounded-lg w-full max-w-3xl bg-yellow-200 hover:scale-105 transition-all duration-200'>
+  <img src='client/src/assets/step_icon_1.svg' alt="" className='h-10 w-10' />
+  <div className='flex flex-col justify-center'>
+    <div className='font-semibold text-lg'>Describe Your Vision</div>
+    <div className='text-orange-500'>
+      Type a phrase, sentence, or paragraph that describes the image you want to create.
+    </div>
+  </div>
+</div>
 
-        <div className='flex border-2 p-5 gap-2 rounded-lg'>
-          <img src='client/src/assets/step_icon_1.svg' alt="" className='h-10 w-10' />
-          <div className='flex flex-col justify-center  '>
-            <div className='font-semibold'>Describe Your Vision</div>
-            <div className=''>Type a phrase, sentence, or paragraph that describes the image you want to create.</div>
-          </div>
-        </div>
+{/* Step 2 */}
+<div className='flex border-2 p-5 gap-4 rounded-lg w-full bg-yellow-200 max-w-3xl hover:scale-105 transition-all duration-200'>
+  <img src='client/src/assets/step_icon_2.svg' alt="" className='h-10 w-10' />
+  <div className='flex flex-col justify-center'>
+    <div className='font-semibold text-lg'>Watch the Magic</div>
+    <div className='text-orange-500'>
+      Our AI engine swiftly transforms your text into a high-quality, unique image within seconds.
+    </div>
+  </div>
+</div>
 
-        <div className='flex border-2 p-5 gap-2 rounded-lg'>
-          <img src='client/src/assets/step_icon_1.svg' alt="" className='h-10 w-10' />
-          <div className='flex flex-col justify-center  '>
-            <div>Describe Your Vision</div>
-            <div>Type a phrase, sentence, or paragraph that describes the image you want to create.</div>
-          </div>
-        </div>
+{/* Step 3 */}
+<div className='flex border-2 px-5 py-5 gap-4 rounded-lg w-full bg-yellow-200 max-w-3xl hover:scale-105 transition-all duration-200'>
+  <img src='client/src/assets/step_icon_3.svg' alt="" className='h-10 w-10' />
+  <div className='flex flex-col justify-center'>
+    <div className='font-semibold text-lg'>Download & Share</div>
+    <div className='text-orange-500'>
+      Download your creation or share it directly from our platform. 
+      Let your imagination flow wild.
+    </div>
+  </div>
+</div>
+</div>
 
 
-      </div>
+   <div className="w-full bg-gray-50 py-10 flex flex-col items-center justify-center text-center">
+  <h2 className="text-3xl md:text-4xl font-bold">Generate AI Images</h2>
+  <p className="text-gray-500 text-lg mt-2">Bring Creative Vision to Life</p>
+  {/* Dummy Image */}
+  
+</div>
+
 
      
 
