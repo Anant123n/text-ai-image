@@ -100,12 +100,38 @@ const Header = () => {
 </div>
 
 
-   <div className="w-full bg-gray-50 py-10 flex flex-col items-center justify-center text-center">
-  <h2 className="text-3xl md:text-4xl font-bold">Generate AI Images</h2>
-  <p className="text-gray-500 text-lg mt-2">Bring Creative Vision to Life</p>
+   <div className="w-full  py-10 flex flex-col items-center justify-center text-center">
+  <h2 className="text-3xl text-blue-500 md:text-4xl font-bold">Generate AI Images</h2>
+  <p className="text-gray-500 text-red-600 text-lg mt-1">Bring Creative Vision to Life</p>
   {/* Dummy Image */}
   
 </div>
+
+
+<div class="flex flex-col md:flex-row items-center justify-center px-6 py-12">
+ 
+  <div class="md:w-1/2 mb-8 md:mb-0 md:mr-8">
+    <img
+      src="https://via.placeholder.com/500x350" 
+      alt="AI Image Generator Example"
+      class="rounded-xl shadow-lg"
+    />
+  </div>
+
+ 
+  <div class="md:w-1/2 text-yellow-500">
+    <h2 class="text-3xl font-boldmb-4 text-pink-500">
+      Introducing the AI Website – Your Ultimate Text to Image Generator
+    </h2>
+    <p class=" mb-4">
+      Effortlessly bring your ideas to life with our free AI image generator. Transform your text into stunning visuals in seconds. Imagine, describe, and see your vision come to life instantly.
+    </p>
+    <p class="">
+      Type a text prompt, and our advanced AI will generate high-quality images in seconds. From product visuals to character designs and portraits, even non-existent concepts come to life effortlessly. Unleash limitless creativity with our AI technology.
+    </p>
+  </div>
+</div>
+
 
 
      
